@@ -1,6 +1,6 @@
 import React from 'react';
 import { ShieldCheck, HeartPulse, Wind, AlertTriangle } from 'lucide-react';
-import './about.css';
+import './About.css';
 
 const About: React.FC = () => {
   return (
