@@ -33,3 +33,7 @@ npm install
 ### 2. Run the App
 cd my-react-app
 npm run dev
+
+### 3. .env
+Create a .env file in backend directory.
+Then add the following variables: MONGO_URL,JWT_SECRET,JWT_EXPIRES_IN.
