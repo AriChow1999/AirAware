@@ -2,9 +2,6 @@
 
 A sleek, responsive User Profile Management dashboard built with **React** and **TypeScript**. This project features a modern glass-morphism UI and is fully optimized for all device sizes.
 
-## 🚀 Live Demo
-[Click here to view the Live App](https://your-vercel-link.vercel.app)
-*(Note: Replace the link above with your actual Vercel/Netlify URL)*
 
 ## ✨ Features
 - **Modern UI:** Frosted glass effect using custom CSS `backdrop-filter`.
