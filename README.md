@@ -34,8 +34,5 @@ cd my-react-app
 npm install
 
 ### 2. Run the App
-cd backend 
-nodemon server.js
-
 cd my-react-app
 npm run dev
