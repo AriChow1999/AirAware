@@ -27,7 +27,7 @@ mongoose.connect(process.env.MONGO_URL)
     .catch(err => console.error("MongoDB Connection Error:", err));
 
 
-// ----------------------------------------------AUTH ENDPOINTS--------------------------------------------------------
+// -----------------------------AUTH ENDPOINTS-------------------------
 fastify.post('/api/auth/signup', async (request, reply) => {
     try {
         const { fullName, email, password, cityName } = request.body;
@@ -123,7 +123,7 @@ fastify.get('/api/auth/me', async (request, reply) => {
 });
 
 
-// ----------------------------------------------PROTECTED (JWT)----------------------------------------------------
+// ------------------------------PROTECTED (JWT)-------------------------
 
 fastify.put('/api/user/profile', async (request, reply) => {
     try {
@@ -159,7 +159,7 @@ fastify.put('/api/user/profile', async (request, reply) => {
     }
 });
 
-// ----------------------------------------------PUBLIC ENDPOINTS-----------------------------------------------------
+// -------------------------------PUBLIC ENDPOINTS-----------------------
 const fetchAQI = async (lat, lon) => {
     const url = `https://air-quality-api.open-meteo.com/v1/air-quality?latitude=${lat}&longitude=${lon}&current=us_aqi`;
     const response = await axios.get(url);
@@ -192,7 +192,7 @@ fastify.get('/api/aqi/by-city', async (request, reply) => {
 });
 
 
-// ----------------------------------------------SAVED CITIES (CRUD)---------------------------------------------------
+// ------------------------------SAVED CITIES (CRUD)----------------------
 
 fastify.get('/api/user/cities', async (request, reply) => {
     try {
