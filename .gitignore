@@ -1,0 +1,9 @@
+# Improved Monorepo Rules
+**/node_modules/
+**/dist/
+**/dist-ssr/
+**/*.local
+
+# Secrets
+.env
+**/.env
